@@ -1,0 +1,320 @@
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kashmir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Explore Kashmir</h1>
+            <div class="weather">
+                <p>Weather: 15°C, Sunny</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="video-container">
+
+            <video autoplay loop muted class="background-video">
+                <source src="D:\Vamse\Kashmir Website\imgs\sim2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- <video autoplay loop muted class="background-video">
+                <source src="D:\Vamse\Kashmir Website\imgs\v2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted class="background-video">
+                <source src="D:\Vamse\Kashmir Website\imgs\v3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        </div>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h2>Welcome  to  Royal  White  Paradise</h2>
+            <!-- <p>Discover the breathtaking beauty and culture of Kashmir.</p> -->
+            <!-- <a href="#about" class="btn">Learn More</a> -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Kashmir</h2>
+            <img src="D:\Vamse\Kashmir Website\imgs\2.jpg" alt="About Kashmir" class="section-img">
+            <p>Kashmir is known for its picturesque landscapes, rich culture, and warm hospitality. From the serene Dal Lake to the lush valleys of Gulmarg and Pahalgam, it’s truly a paradise on Earth.</p>
+        </div>
+    </section>
+
+    <section id="attractions">
+        <div class="container">
+            <h2>Top Attractions</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/Dal_Lake" target="_blank">
+                        <img src="D:\Vamse\Kashmir Website\imgs\3.jpg" alt="Dal Lake">
+                    </a>
+                    <h3>Dal Lake</h3>
+                    <p>Enjoy a Shikara ride on the serene waters of Dal Lake.</p>
+                </div>
+                <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/Gulmarg" target="_blank">
+                        <img src="D:\Vamse\Kashmir Website\imgs\4.jpg" alt="Gulmarg">
+                    </a>
+                    <h3>Gulmarg</h3>
+                    <p>Experience the thrill of skiing in Gulmarg's snowy slopes.</p>
+                </div>
+                <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/pahalgam" target="_blank">
+                        <img src="D:\Vamse\Kashmir Website\imgs\5.jpg" alt="Pahalgam">
+                    </a>
+                    <h3>Pahalgam</h3>
+                    <p>Immerse yourself in the natural beauty of Pahalgam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="container">
+            <h2>Culture & Heritage</h2>
+            <img src="D:\Vamse\Kashmir Website\imgs\6.jpg" alt="Kashmir Culture" class="section-img">
+            <p>Discover Kashmiri traditions, cuisines, and handicrafts. Explore the famous Pashmina shawls, Kashmiri Wazwan cuisine, and vibrant festivals.</p>
+        </div>
+    </section>
+
+    <section id="movies">
+        <div class="container">
+            <h2>Popular Movies Shot in Kashmir</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="D:\Vamse\Kashmir Website\imgs\7.jpg" alt="Movie 1">
+                    <h3>Leo</h3>
+                </div>
+                <div class="card">
+                    <img src="D:\Vamse\Kashmir Website\imgs\8.jpg" alt="Movie 2">
+                    <h3>Amaran</h3>
+                </div>
+                <div class="card">
+                    <img src="D:\Vamse\Kashmir Website\imgs\9.jpg" alt="Movie 3">
+                    <h3>Vivegam</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@explorekashmir.com | Phone: +91-6382821260</p>
+            <p>&copy; vijayvamsi All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+style.css:
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FontOne';
+}
+/* Importing Custom Font */
+@font-face {
+    font-family: 'CustomFont'; /* Name your font */
+    src: url('D:/Vamse/Kashmir Website/fonts/Rockybilly.ttf') format('truetype'); /* Link to your TTF font file */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontOne'; /* First font */
+    src: url('D:/Vamse/Kashmir Website/fonts/Stylish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: lightcyan;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background: #123;
+    color: #fff;
+    padding: 1em 0;
+    position: relative;
+
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 3%;
+    font-family: 'CustomFont';
+}
+
+.weather {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 0.9em;
+    color: yellow;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 400px;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.background-video {
+    flex: 1;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    opacity: 1; /* Modest opacity for videos */
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Content appears above videos */
+    text-align: center;
+    color: yellow;
+
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-family: 'CustomFont';
+    margin-top: 50%;
+}
+
+.hero .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Sections */
+section {
+    padding: 2em 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.section-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
+
+/* Grid Styling */
+.grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0.5em 0;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Makes sure the overlay is above the videos but below the text */
+}
+
